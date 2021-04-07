@@ -5,7 +5,7 @@
 @section('content')
 
   <div class="login-logo">
-    S<b>e</b>AT | {{ trans('web::seat.sign_in') }}
+    WHBOO | {{ trans('web::seat.sign_in') }}
   </div>
 
   <hr>
