@@ -113,6 +113,7 @@ class MoonsDataTable extends DataTable
                     d.system_id         = $("#dt-filters-system").val() === null ? 0 : $("#dt-filters-system").val();
                     d.rank_selection    = $("#dt-filters-rank").val() === null ? [] : $("#dt-filters-rank").val();
                     d.product_selection = $("#dt-filters-product").val() === null ? [] : $("#dt-filters-product").val();
+                    d.monthly_pull_min  = $("#dt-filters-monthly-pull").val() === null ? 0 : $("#dt-filters-monthly-pull").val();
                 }',
             ]);
     }
@@ -138,7 +139,7 @@ class MoonsDataTable extends DataTable
             ['data' => 'moon.solar_system.name', 'title' => trans_choice('web::moons.system', 1)],
             ['data' => 'moon.planet.name', 'title' => trans_choice('web::moons.planet', 1)],
             ['data' => 'moon.solar_system.sovereignty', 'title' => trans_choice('web::moons.sovereignty', 1), 'orderable' => false, 'searchable' => false],
-            ['data' => 'moon.monthly_pull', 'title' => trans_choice('web::moons.monthly_pull', 1), 'name' => 'moon.monthly_pull', 'searchable' => false],
+            ['data' => 'moon.monthly_pull', 'title' => trans_choice('web::moons.monthly_pull', 1), 'searchable' => false],
             ['data' => 'updated_at', 'title' => trans('web::seat.last_update')],
             ['data' => 'indicators', 'title' => trans_choice('web::moons.indicator', 0), 'orderable' => false, 'searchable' => false],
         ];
