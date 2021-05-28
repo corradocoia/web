@@ -54,7 +54,7 @@ return [
         // 'route' => 'corporations/1705300610/extractions',
         // TDSIN Executive
         'route' => 'corporations/98619921/extractions',
-        'new_tab' => 'false',
+        'new_tab' => false,
     ],
     'character'   => [
         'name'          => 'character',
@@ -85,7 +85,7 @@ return [
         'icon'          => 'fas fa-user-friends',
         'route_segment' => 'squads',
         'route'         => 'squads.index',
-        'permission'    => 'whboo.squad_manager'
+        'permission'    => 'whboo.squad_viewer'
     ],
     'settings'    => [
         'name'          => 'configuration',
