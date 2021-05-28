@@ -17,7 +17,7 @@
       </div>
       <div class="info">
         <a href="{{ route('character.view.assets', ['character' => $user->main_character]) }}" class="d-block">
-          {{ $user->name }}
+          {{ $user->name }} | Assets
         </a>
       </div>
     </div>
