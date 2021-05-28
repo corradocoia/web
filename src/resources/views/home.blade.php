@@ -103,45 +103,6 @@
   </div>
 
   <div class="row">
-    <!-- player count -->
-    <div class="col-md-6 col-sm-3 col-xs-6">
-
-      <div class="card">
-        <div class="card-header border-0">
-          <div class="d-flex justify-content-between">
-            <h3 class="card-title">{{ trans('web::seat.concurrent_player_count') }}</h3>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="position-relative mb-4">
-            <canvas id="serverstatus" height="150" width="1110"></canvas>
-          </div>
-        </div>
-        <!-- /.box-body -->
-      </div>
-    </div>
-
-    <!-- response times -->
-    <div class="col-md-6 col-sm-3 col-xs-6">
-
-      <div class="card">
-        <div class="card-header border-0">
-          <div class="d-flex justify-content-between">
-            <h3 class="card-title">{{ trans('web::seat.esi_response_time') }}</h3>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="position-relative mb-4">
-            <canvas id="serverresponse" height="150" width="1110"></canvas>
-          </div>
-        </div>
-        <!-- /.box-body -->
-      </div>
-    </div>
-
-  </div>
-
-  <div class="row">
 
     <!-- skills graphs -->
     @if(auth()->user()->name != 'admin')

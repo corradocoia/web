@@ -34,6 +34,7 @@ return [
         'plural'        => true,
         'icon'          => 'fas fa-building',
         'route_segment' => 'corporation',
+        'permission'    => 'whboo.corporation_viewer',
         'entries'       => [
             [
                 'name'  => 'all corporations',
@@ -42,6 +43,18 @@ return [
                 'route' => 'corporation.list',
             ],
         ],
+    ],
+    '1moon_extractions' => [
+        'name' => 'Moon Extractions',
+        'label' => 'Moon Extractions',
+        'icon' => 'fas fa-moon',
+        'permission' => 'whboo.extraction_viewer',
+        'route_segment' => 'custom',
+        // The Dark Space Initiative (for testing)
+        // 'route' => 'corporations/1705300610/extractions',
+        // TDSIN Executive
+        'route' => 'corporations/98619921/extractions',
+        'new_tab' => 'false',
     ],
     'character'   => [
         'name'          => 'character',
@@ -57,10 +70,11 @@ return [
                 'route' => 'character.list',
             ],
             [
-                'name'  => 'mail timeline',
-                'label' => 'web::seat.mail_timeline',
-                'icon'  => 'fas fa-envelope',
-                'route' => 'character.view.mail.timeline',
+                'name'       => 'mail timeline',
+                'label'      => 'web::seat.mail_timeline',
+                'icon'       => 'fas fa-envelope',
+                'route'      => 'character.view.mail.timeline',
+                'permission' => 'whboo.recruiter'
             ],
         ],
     ],
@@ -71,6 +85,7 @@ return [
         'icon'          => 'fas fa-user-friends',
         'route_segment' => 'squads',
         'route'         => 'squads.index',
+        'permission'    => 'whboo.squad_manager'
     ],
     'settings'    => [
         'name'          => 'configuration',
