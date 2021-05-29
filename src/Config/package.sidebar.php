@@ -53,7 +53,7 @@ return [
         // The Dark Space Initiative (for testing)
         // 'route' => 'corporations/1705300610/extractions',
         // TDSIN Executive
-        'route' => 'corporations/98619921/extractions',
+        'route' => 'https://beta.whboo.com/corporations/98619921/extractions',
         'new_tab' => false,
     ],
     'character'   => [
