@@ -16,8 +16,20 @@
         {!! img('characters', 'portrait', $user->main_character_id, 64, ['class' => 'img-circle elevation-2', 'alt' => 'User Image'], false) !!}
       </div>
       <div class="info">
+        <a href="{{ route('character.view.sheet', ['character' => $user->main_character]) }}" class="d-block">
+          {{ $user->name }}
+        </a>
+        <br>
         <a href="{{ route('character.view.assets', ['character' => $user->main_character]) }}" class="d-block">
-          {{ $user->name }} | Assets
+          Asset search
+        </a>
+        <br>
+        <a href="{{ route('character.view.industry', ['character' => $user->main_character]) }}" class="d-block">
+          Industry Jobs
+        </a>
+        <br>
+        <a href="{{ route('character.view.journal', ['character' => $user->main_character]) }}" class="d-block">
+          Wallet & Spending
         </a>
       </div>
     </div>
