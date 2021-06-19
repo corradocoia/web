@@ -3,7 +3,7 @@
 /*
  * This file is part of SeAT
  *
- * Copyright (C) 2015 to 2020 Leon Jacobs
+ * Copyright (C) 2015 to 2021 Leon Jacobs
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -53,11 +53,9 @@ class MoonRankScope implements DataTableScope
      * @return mixed
      **/
     public function apply($query) {
-        foreach ($this->groups as $group_id) {
-            $query->whereHas('content', function ($type) use ($group_id) {
-                $type->where('marketGroupID', $group_id);
-            });
-        }
+        $query->whereHas('content', function ($type) {
+            $type->whereIn('marketGroupID', $this->groups);
+        });
 
         return $query;
     }

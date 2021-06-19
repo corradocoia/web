@@ -20,26 +20,33 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-namespace Seat\Web\Http\DataTables\Character\Industrial\Blueprints\Columns;
-
-use Illuminate\Database\Eloquent\Model;
-use Seat\Web\Http\DataTables\Common\AbstractColumn;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\DB;
 
 /**
- * Class LocationFlag.
- *
- * @package Seat\Web\Http\DataTables\Character\Industrial\Blueprints\Columns
+ * Class FixIssueEveseatWeb793.
  */
-class LocationFlag extends AbstractColumn
+class FixIssueEveseatWeb793 extends Migration
 {
     /**
-     * Draw a column cell.
+     * Run the migrations.
      *
-     * @param \Illuminate\Database\Eloquent\Model $row
-     * @return string;
+     * @return void
      */
-    public function draw(Model $row)
+    public function up()
     {
-        return preg_replace('([A-Z])', ' $0', $row->location_flag);
+        DB::table('refresh_tokens')
+            ->leftJoin('users', 'user_id', '=', 'id')
+            ->whereNull('id')
+            ->delete();
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
     }
 }

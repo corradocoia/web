@@ -3,7 +3,7 @@
 /*
  * This file is part of SeAT
  *
- * Copyright (C) 2015 to 2020 Leon Jacobs
+ * Copyright (C) 2015 to 2021 Leon Jacobs
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -249,7 +249,7 @@ class SeatController extends Controller
             $docs_widget = [
                 'id' => '0',
                 'name' => 'SeAT',
-                'url' => 'https://seat.eveseat.net',
+                'url' => 'https://docs.eveseat.net',
                 'updated_at' => carbon('now'),
             ];
 
