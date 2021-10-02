@@ -28,6 +28,21 @@ return [
         'route_segment' => 'home',
         'route'         => 'home',
     ],
+    'alliance' => [
+        'name'          => 'alliance',
+        'label'         => 'web::seat.alliance',
+        'plural'        => true,
+        'icon'          => 'fas fa-city',
+        'route_segment' => 'alliances',
+        'entries'       => [
+            [
+                'name'  => 'all alliances',
+                'label' => 'web::seat.all_alliance',
+                'icon'  => 'fab fa-fort-awesome',
+                'route' => 'alliance.list',
+            ],
+        ],
+    ],
     'corporation' => [
         'name'          => 'corporation',
         'label'         => 'web::seat.corporation',
@@ -61,7 +76,7 @@ return [
         'label'         => 'web::seat.character',
         'plural'        => true,
         'icon'          => 'fas fa-user',
-        'route_segment' => 'character',
+        'route_segment' => 'characters',
         'entries'       => [
             [
                 'name'  => 'all characters',
