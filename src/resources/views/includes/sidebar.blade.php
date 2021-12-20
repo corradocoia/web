@@ -3,7 +3,7 @@
   <!-- Logo -->
   <a href="{{ route('home') }}" class="brand-link">
     <img class="brand-image img-circle elevation-3" src="{{ asset('web/img/logo.png') }}" alt="SeAT" />
-    <span class="brand-text font-weight-light">S<b>e</b>AT</span>
+    <span class="brand-text font-weight-light">WHBOO</span>
   </a>
 
   <!-- sidebar: style can be found in sidebar.less -->
@@ -18,6 +18,18 @@
       <div class="info">
         <a href="{{ route('character.view.sheet', ['character' => $user->main_character]) }}" class="d-block">
           {{ $user->name }}
+        </a>
+        <br>
+        <a href="{{ route('character.view.assets', ['character' => $user->main_character]) }}" class="d-block">
+          Asset search
+        </a>
+        <br>
+        <a href="{{ route('character.view.industry', ['character' => $user->main_character]) }}" class="d-block">
+          Industry Jobs
+        </a>
+        <br>
+        <a href="{{ route('character.view.journal', ['character' => $user->main_character]) }}" class="d-block">
+          Wallet & Spending
         </a>
       </div>
     </div>

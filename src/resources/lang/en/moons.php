@@ -33,4 +33,5 @@ return [
     'uncommon'      => 'Uncommon',
     'rare'          => 'Rare',
     'exceptional'   => 'Exceptional',
+    'monthly_pull'  => 'Monthly Pull (ISK)'
 ];

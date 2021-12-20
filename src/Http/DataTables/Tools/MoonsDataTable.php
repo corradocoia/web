@@ -66,13 +66,23 @@ class MoonsDataTable extends DataTable
             ->editColumn('updated_at', function ($row) {
                 return view('web::partials.date', ['datetime' => $row->updated_at]);
             })
+            ->editColumn('moon.monthly_pull', function ($row) {
+                // return $row->content;
+                // return view('web::tools.moons.partials.moon_value', compact('row'))->render();
+                $total = 0;
+                foreach ($row->content as $type) {
+                    // Assuming 20K m3 per hour, 720 hours (30 days), based on the uncompressed price
+                    $total += (($type->pivot->rate * 20000 * 720) / $type->volume) * $type->price->average;
+                }
+                return number_format($total, 2);
+            })
             ->editColumn('indicators', function ($row) {
                 return view('web::tools.moons.partials.indicators', compact('row'))->render();
             })
             ->editColumn('action', function ($row) {
                 return view('web::tools.moons.buttons.action', compact('row'))->render();
             })
-            ->rawColumns(['moon.solar_system.sovereignty', 'indicators', 'action'])
+            ->rawColumns(['moon.solar_system.sovereignty', 'indicators', 'action', 'moons.monthly_pull'])
             ->with('stats', [
                 'ubiquitous' => $this->applyScopes(UniverseMoonReport::query()->ubiquitous())->count(),
                 'common' => $this->applyScopes(UniverseMoonReport::query()->common())->count(),
@@ -104,6 +114,7 @@ class MoonsDataTable extends DataTable
                     d.rank_selection    = $("#dt-filters-rank").val() === null ? [] : $("#dt-filters-rank").val();
                     d.product_selection = $("#dt-filters-product").val() === null ? [] : $("#dt-filters-product").val();
                 }',
+                // d.monthly_pull_min  = $("#dt-filters-monthly-pull").val() === null ? 0 : $("#dt-filters-monthly-pull").val();
             ]);
     }
 
@@ -128,6 +139,7 @@ class MoonsDataTable extends DataTable
             ['data' => 'moon.solar_system.name', 'title' => trans_choice('web::moons.system', 1)],
             ['data' => 'moon.planet.name', 'title' => trans_choice('web::moons.planet', 1)],
             ['data' => 'moon.solar_system.sovereignty', 'title' => trans_choice('web::moons.sovereignty', 1), 'orderable' => false, 'searchable' => false],
+            ['data' => 'moon.monthly_pull', 'title' => trans_choice('web::moons.monthly_pull', 1), 'orderable' => false, 'searchable' => false],
             ['data' => 'updated_at', 'title' => trans('web::seat.last_update')],
             ['data' => 'indicators', 'title' => trans_choice('web::moons.indicator', 0), 'orderable' => false, 'searchable' => false],
         ];

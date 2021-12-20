@@ -30,6 +30,10 @@
                     <label for="dt-filters-product">Producing:</label>
                     <select class="form-control" name="dt-filters-product[]" id="dt-filters-product" multiple="multiple"></select>
                 </div>
+                <!-- <div class="col-sm py-2">
+                    <label for="dt-filters-monthly-pull">Minimum Monthly Pull Value (billions)</label>
+                    <input class="text" name="dt-filters-monthly-pull" id="dt-filters-monthly-pull"></input>
+                </div> -->
             </div>
             <button type="button" class="btn btn-primary" id="dt-filters-search">
                 <i class="fas fa-search"></i>

@@ -189,4 +189,14 @@ return [
     'search_character_standings_label'     => 'Search Character Standings',
     'search_corporation_assets_label'      => 'Search Corporation Assets',
     'search_corporation_standings_label'   => 'Search Corporation Standings',
+
+    // WHBOO Scope; these are custom permissions that may control existing elements
+    'whboo_recruiter_label'       => 'WHBOO Recruiter',
+    'whboo_recruiter_description' => 'Grant access to website functions intended for recruiters (mail timeline)',
+    'whboo_notification_manager_label' => 'Notification manager',
+    'whboo_notification_manager_description' => 'Grant access to notification settings',
+    'whboo_squad_viewer_label' => 'Squad Viewer',
+    'whboo_squad_viewer_description' => 'Grant access to view Squads',
+    'whboo_corporation_viewer_label' => 'Corporation Viewer',
+    'whboo_squad_viewer_description' => 'Grant access to view corporation browser',
 ];

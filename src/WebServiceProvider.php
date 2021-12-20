@@ -353,6 +353,7 @@ class WebServiceProvider extends AbstractSeatPlugin
         $this->registerPermissions(__DIR__ . '/Config/Permissions/people.php', 'people');
         $this->registerPermissions(__DIR__ . '/Config/Permissions/search.php', 'search');
         $this->registerPermissions(__DIR__ . '/Config/Permissions/moon.php', 'moon');
+        $this->registerPermissions(__DIR__ . '/Config/Permissions/whboo.php', 'whboo');
 
         // Override horizon environments configuration
         $this->override_horizon();

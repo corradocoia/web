@@ -228,8 +228,8 @@ return [
     'owned_api_keys'              => 'Owned API Keys',
     'total_character_isk'         => 'Total Character ISK',
     'total_character_skillpoints' => 'Total Character Skillpoints',
-    'total_character_mined_isk'   => 'Total Mined ISK',
     'total_character_ratted_isk'   => 'Total Ratted ISK',
+    'total_character_mined_isk'   => 'Total Mined ISK (this calendar month)',
     'total_killmails'             => 'Total Killmails',
     'main_char_skills'            => ':character_name\'s Skills',
     'main_char_skills_per_level'  => 'Skills Per Level',
@@ -693,7 +693,7 @@ return [
         'by your authentication application.',
     'code'                         => 'Code',
     'confirm_setup'                => 'Confirm Setup',
-    'linked_characters'            => 'Linked Characters',
+    'linked_characters'            => 'Linked Cabbages',
     'link_another_character'       => 'Link another character',
     'view_third_party_access'      => 'View Apps on Eveonline.com',
     'third_party_access'           => 'Check the access third party applications (such as this one) have to ' .
