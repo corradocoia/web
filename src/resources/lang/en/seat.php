@@ -693,7 +693,7 @@ return [
         'by your authentication application.',
     'code'                         => 'Code',
     'confirm_setup'                => 'Confirm Setup',
-    'linked_characters'            => 'Linked Cabbages',
+    'linked_characters'            => 'Linked Doritos',
     'link_another_character'       => 'Link another character',
     'view_third_party_access'      => 'View Apps on Eveonline.com',
     'third_party_access'           => 'Check the access third party applications (such as this one) have to ' .

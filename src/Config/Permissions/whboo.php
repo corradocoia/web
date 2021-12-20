@@ -38,7 +38,11 @@ return [
         'description' => 'web::permissions.whboo_squad_viewer_description'
     ],
     'extraction_viewer' => [
-        'label' => 'WHBOO Moon Extractions',
-        'description' => 'Quick access to moon extraction information'
+        'label' => 'web::permissions.whboo_moon_extractions_label',
+        'description' => 'web::permissions.whboo_moon_extractions_description'
+    ],
+    'link_viewer' => [
+        'label' => 'web::permissions.whboo_link_viewer_label',
+        'description' => 'web::permissions.whboo_link_viewer_description'
     ]
 ];

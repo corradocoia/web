@@ -199,4 +199,8 @@ return [
     'whboo_squad_viewer_description' => 'Grant access to view Squads',
     'whboo_corporation_viewer_label' => 'Corporation Viewer',
     'whboo_squad_viewer_description' => 'Grant access to view corporation browser',
+    'whboo_moon_extractions_label' => 'WHBOO Moon Extractions',
+    'whboo_moon_extractions_description' => 'Quick access to moon extraction information',
+    'whboo_link_viewer_label' => 'WHBOO Links',
+    'whboo_link_viewer_description' => 'Access to view links to moon pull sheet, buyback sheet, etc',
 ];

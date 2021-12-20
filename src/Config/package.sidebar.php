@@ -71,6 +71,54 @@ return [
         'route' => 'https://whboo.com/corporations/98619921/extractions',
         'new_tab' => false,
     ],
+    '2ore_buyback' => [
+        'name' => 'Ore Buyback',
+        'label' => 'Ore Buyback',
+        'icon' => 'fas fa-file-invoice-dollar',
+        'permission' => 'whboo.link_viewer',
+        'route_segment' => 'custom',
+        // The Dark Space Initiative (for testing)
+        // 'route' => 'corporations/1705300610/extractions',
+        // TDSIN Executive
+        'route' => 'https://docs.google.com/spreadsheets/d/1n7zC5gTtpZ_--iHVuONtgl3K2qdjLTZ2xVwQbR2fvpY/edit#gid=1661123201',
+        'new_tab' => true,
+    ],
+    '3Moon Pull Schedule' => [
+        'name' => 'Moon Pull Schedule',
+        'label' => 'Moon Pull Schedule',
+        'icon' => 'fas fa-calendar-alt',
+        'permission' => 'whboo.link_viewer',
+        'route_segment' => 'custom',
+        // The Dark Space Initiative (for testing)
+        // 'route' => 'corporations/1705300610/extractions',
+        // TDSIN Executive
+        'route' => 'https://docs.google.com/spreadsheets/d/1fPXcyvdCsBFq5aYgcjoz-_yjno1-4MHRecW8gpi4v7U/edit#gid=0',
+        'new_tab' => true,
+    ],
+    '4moon_taxes_sheet' => [
+        'name' => 'Moon Taxes Owed',
+        'label' => 'Moon Taxes Owed',
+        'icon' => 'fas fa-receipt',
+        'permission' => 'whboo.link_viewer',
+        'route_segment' => 'custom',
+        // The Dark Space Initiative (for testing)
+        // 'route' => 'corporations/1705300610/extractions',
+        // TDSIN Executive
+        'route' => 'https://docs.google.com/spreadsheets/d/1v3Qxhu45ygGU9inq5sKedPE5mEqjQyqucDbMMSOUmoo/edit',
+        'new_tab' => true,
+    ],
+    '5diplo_sheet' => [
+        'name' => 'Diplo Sheet',
+        'label' => 'Diplo Sheet',
+        'icon' => 'fas fa-handshake',
+        'permission' => 'whboo.link_viewer',
+        'route_segment' => 'custom',
+        // The Dark Space Initiative (for testing)
+        // 'route' => 'corporations/1705300610/extractions',
+        // TDSIN Executive
+        'route' => 'https://docs.google.com/spreadsheets/d/1n7zC5gTtpZ_--iHVuONtgl3K2qdjLTZ2xVwQbR2fvpY/edit#gid=1661123201',
+        'new_tab' => true,
+    ],
     'character'   => [
         'name'          => 'character',
         'label'         => 'web::seat.character',
