@@ -115,25 +115,7 @@
 
   <div class="row">
     
-    <!-- player count -->
-    <div class="col-xs-12 col-sm-6">
 
-      <div class="card">
-        <div class="card-header border-0">
-          <div class="d-flex justify-content-between">
-            <h3 class="card-title">{{ trans('web::seat.concurrent_player_count') }}</h3>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="position-relative mb-4">
-            <canvas id="serverstatus" height="150" width="1110"></canvas>
-          </div>
-        </div>
-        <!-- /.box-body -->
-      </div>
-    </div>
-
-    
 
     <!-- skills graphs -->
     @if(auth()->user()->name != 'admin')
