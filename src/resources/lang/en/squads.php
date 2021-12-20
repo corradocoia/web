@@ -21,7 +21,7 @@
  */
 
 return [
-    'squad'        => 'Squad|Squads',
+    'squad'        => 'Access Control|Access Controls',
     'name'         => 'Name|Names',
     'description'  => 'Description',
     'type'         => 'Type',
