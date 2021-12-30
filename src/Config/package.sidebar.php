@@ -92,7 +92,7 @@ return [
         // The Dark Space Initiative (for testing)
         // 'route' => 'corporations/1705300610/extractions',
         // TDSIN Executive
-        'route' => 'https://docs.google.com/spreadsheets/d/1fPXcyvdCsBFq5aYgcjoz-_yjno1-4MHRecW8gpi4v7U/edit#gid=0',
+        'route' => 'https://docs.google.com/spreadsheets/d/1earDo014B9tY-zCeKyKHWPT8fxF761tfqLyJPpMERXA/edit#gid=0',
         'new_tab' => true,
     ],
     '4moon_taxes_sheet' => [
