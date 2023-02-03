@@ -28,4 +28,9 @@ return [
     'moon'          => 'Mond(e)',
     'indicator'     => 'Indikator(en)',
     'sovereignty'   => 'Souveränität',
+    'ubiquitous'    => 'Ubiquitous',
+    'common'        => 'Gewöhnlich',
+    'uncommon'      => 'Ungewöhnlich',
+    'rare'          => 'Selten',
+    'exceptional'   => 'Außergewöhnlich',
 ];
